@@ -1,27 +1,44 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+# Rails5 APIと通信するIonic3アプリtest-web-ionic3 (Rails5 APIサーバとセット)
 
-## How to use this template
+Rails5 API + ionic3によるアプリの例の、Ionic3の方のコードです。
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+詳細は以下  
+Rails5＠HerokuとIonic3アプリで通信  
+http://twosquirrel.mints.ne.jp/?p=18600
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+Rails5APIサーバのコードは、以下のリンク  
+https://github.com/adash333/rails5_test_api
 
-### With the Ionic CLI:
+## Requirement
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+- Node.js 6.11.0
+- Ionic CLI 3.4.0
 
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myTabs tabs
-```
+## Installation
 
-Then, to run it, cd into `myTabs` and run:
+    $ git clone https://github.com/adash333/test-web-ionic3.git
+    $ cd test-web-ionic3
+    $ npm install
+    $ ionic serve
 
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
+androidアプリの作成(ionic-cli version3.xの場合、通常はこちら)
 
-Substitute ios for android if not on a Mac.
+    $ ionic cordova platform add android
+    $ ionic cordova build android
 
-"# test-web-ionic3" 
+エラーが出てうまくいかない場合は、エラーの内容をGoogle検索したり、  
+http://qiita.com/567000/items/dc4917027cf060a3e2ea  
+を参考になさったりしてください。  
+
+## Anything Else
+
+このコードは、以下のサイトのソースコードを参考にしています。
+
+angular4とrails5をスッと使ってみる  
+kanadai  
+2017年05月06日に更新  
+http://qiita.com/kanadai/items/0034f0c0fe26efab2f2b
+
+## Author
+
+adash333
